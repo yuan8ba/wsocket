@@ -1,3 +1,4 @@
 #!/bin/bash
-nohup /app/frpc &
+cd /app/
+nohup ./frpc &
 /app/v2ray run
