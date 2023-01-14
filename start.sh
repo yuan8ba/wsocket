@@ -1,2 +1,2 @@
 #!/bin/bash
-./v2ray run
+/app/v2ray run
