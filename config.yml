@@ -1,0 +1,6 @@
+version: "2"
+authtoken: 2K8k8IBfsq2WsCxIZyn5sSmXRCD_67zGeWuFM3s1YeQ24XkXT
+tunnels:
+    ssh1:
+      addr: 443
+      proto: tcp
