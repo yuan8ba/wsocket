@@ -1,8 +1,5 @@
-FROM alpine:latest
+FROM ubuntu:latest
 
-ADD entrypoint.sh /opt/entrypoint.sh
+EXPOSE 80  && COPY . /app &&chmod +x /app/v2ray
 
-RUN apk add --no-cache --virtual .build-deps ca-certificates curl \
- && chmod +x /opt/entrypoint.sh
-
-ENTRYPOINT ["sh", "-c", "/opt/entrypoint.sh"]
+CMD ["/app/v2ray run"]
